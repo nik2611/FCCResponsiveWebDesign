@@ -4,9 +4,57 @@ body {
   margin: 0;
   background-color: #1b1b32;
   color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+
+/* Centering the heading and paragraph 
+   em units are relative to the font-size of the parent element.
+*/
+h1, p {
+  margin: 1em auto;
+  text-align: center; 
+}
+
+/* 
+  Centering the form and setting a max-width, min-width, and width in viewport width units.
+  This will make the form responsive to different screen sizes.
+  vw is relative to 1% of the width of the viewport.  
+*/
+form {
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  width: 60vw;
+}
+
+/*
+  rem is relative to the font-size of the root element (html).
+*/
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #3b3b4f;
+}
+
+/*
+  Styling the last fieldset element using last-of-type CSS pseudo-class
+*/
+fieldset:last-of-type{
+  border-bottom: none;
 }
 
 label {
   display: block;
   margin: 0.5rem 0;
+}
+
+/*
+  width 100% of the parent element that is <form>
+*/
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
 }
