@@ -1,0 +1,33 @@
+.canvas {
+  width: 500px;
+  height: 600px;
+  background-color: #4d0f00;
+  padding: 1px; /* padding of 1px to the .canvas element to give the .one element 
+  something solid to push off of. Because of this the canvas changed its dimensions 
+  to 502 pixels x 602 pixels.*/
+  overflow: hidden; /* overflow CSS property is used to control what happens to content
+  that is too large to fit in an area and hidden value is used to clip the overflowing 
+  content */
+}
+
+/* border shorthand declaration in CSS is 
+   border: <border-width> <border-style> <border-color>; */
+.frame{
+  border: 50px solid black;
+  width: 500px;
+  padding: 50px; /* This is padding shorthand declaration in CSS for all sides */
+  margin: 20px auto; /* This is margin shorthand declaration in CSS for top-bottom 
+  and left-right and auto centers the element */
+}
+
+.one {
+  width: 425px;
+  height: 150px;
+  background-color: #efb762;
+  margin: 20px auto;
+}
+
+.two {
+  width: 475px;
+  height: 200px;
+}
