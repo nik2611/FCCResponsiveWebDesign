@@ -2,4 +2,30 @@ body {
     background-image: url("Project_186-08_generated.jpg");
     background-size: cover;
     background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.heading {
+    width: 400px;
+    color: black;
+    text-align: center;
+    margin: 20px auto 0 auto;
+    border: 3px solid black;
+    background-color: rgba(255, 255, 255, 0.858);
+    border-radius: 10px;
+}
+
+form {
+    width: 700px;
+    margin: 70px auto;
+    border: 3px solid black;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.674);
+    border-radius: 10px;
+}
+
+h1, p {
+    margin: 7px 0;
+    font-weight: bold;
 }
