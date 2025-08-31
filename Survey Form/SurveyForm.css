@@ -1,5 +1,7 @@
 body {
-    background-image: url("Project_186-08_generated.jpg");
+    background-image: linear-gradient(115deg, rgba(255, 255, 158, 0.5),
+      rgba(136, 136, 206, 0.5)), 
+    url("Project_186-08_generated.jpg");
     background-size: cover;
     background-position: center;
     width: 100vw;
@@ -28,4 +30,10 @@ form {
 h1, p {
     margin: 7px 0;
     font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+    font-style: italic;
+    display: block;
 }

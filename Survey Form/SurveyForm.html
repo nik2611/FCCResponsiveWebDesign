@@ -60,15 +60,27 @@
           max="100"
           placeholder="Enter your age here"
       /></label>
-      <select id="dropdown">
-        <option disabled selected>Select an option</option>
-        <option></option>
-        <option></option>
-      </select>
-      <input type="radio" name="recommendation" value="mayBe" checked />
-      <input type="radio" name="recommendation" value="notSure" />
-      <input type="checkbox" name="improvisation" value="wiki" />
-      <input type="checkbox" name="improvisation" value="forum" />
+      <label for="dropdown"
+        >Which option best describes your current role?
+        <select id="dropdown">
+          <option disabled selected>Select an option</option>
+          <option>Student</option>
+          <option>Full Time Job</option>
+          <option>Full Time Learner</option>
+          <option>Freelancer</option>
+          <option>Other</option>
+        </select>
+      </label>
+      <fieldset>
+        <legend>Would you recommend this website to a friend?</legend>
+        <input type="radio" name="recommendation" value="mayBe" checked />
+        <input type="radio" name="recommendation" value="notSure" />
+      </fieldset>
+      <fieldset>
+        <legend>What do you like most about this website?</legend>
+        <input type="checkbox" name="improvisation" value="wiki" />
+        <input type="checkbox" name="improvisation" value="forum" />
+      </fieldset>
       <textarea></textarea>
       <input type="submit" id="submit" />
     </form>
