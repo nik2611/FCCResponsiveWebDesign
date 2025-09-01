@@ -25,6 +25,7 @@ form {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.674);
     border-radius: 10px;
+    line-height: 1.75;
 }
 
 h1, p {
@@ -49,4 +50,9 @@ legend {
     font-weight: bold;
     font-style: italic;
     text-decoration: underline;
+}
+
+input[type="text"], input[type="email"], input[type="number"], select {
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
 }
