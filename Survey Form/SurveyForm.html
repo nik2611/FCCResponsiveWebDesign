@@ -73,15 +73,41 @@
       </label>
       <fieldset>
         <legend>Would you recommend this website to a friend?</legend>
-        <input type="radio" name="recommendation" value="mayBe" checked />
-        <input type="radio" name="recommendation" value="notSure" />
+        <label
+          ><input type="radio" name="recommendation" value="definitely" />
+          Definitely</label
+        >
+        <label
+          ><input type="radio" name="recommendation" value="mayBe" checked />
+          MayBe</label
+        >
+        <label
+          ><input type="radio" name="recommendation" value="notSure" /> Not
+          sure</label
+        >
       </fieldset>
       <fieldset>
         <legend>What do you like most about this website?</legend>
-        <input type="checkbox" name="improvisation" value="wiki" />
-        <input type="checkbox" name="improvisation" value="forum" />
+        <label>
+          <input type="checkbox" name="favourite" value="authentication" />
+          Authentication
+        </label>
+        <label>
+          <input type="checkbox" name="favourite" value="profile" /> Profile
+          page
+        </label>
+        <label>
+          <input type="checkbox" name="favourite" value="settings" /> Settings
+          page
+        </label>
       </fieldset>
-      <textarea></textarea>
+      <fieldset>
+        <legend>Feel free to share your comments here</legend>
+        <textarea
+          id="comments"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </fieldset>
       <input type="submit" id="submit" />
     </form>
   </body>
