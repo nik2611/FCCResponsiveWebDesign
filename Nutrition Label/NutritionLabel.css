@@ -104,6 +104,10 @@ p {
   margin-left: 1em
 }
 
+.double-indent {
+  margin-left: 2em;
+}
+
 /*.daily-value p {
   border-bottom: 1px solid #888989;
 }*/
@@ -111,4 +115,11 @@ p {
 .daily-value p:not(.no-divider){ /* Selects all <p> elements inside .daily-value 
                                     except those with class no-divider */
   border-bottom: 1px solid #888989;
+}
+
+.note {
+  font-size: 0.6rem;
+  margin: 5px 0;
+  padding: 0 8px;
+  text-indent: -8px; /*Moves the first line of text to the left by 8px*/
 }
