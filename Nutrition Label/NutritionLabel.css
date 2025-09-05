@@ -19,15 +19,20 @@ body {
   box-sizing: border-box;
 }
 
-h1 {
+header h1 { /* Targets only h1 inside header element*/
   text-align: center;
   margin: -4px 0;
   letter-spacing: 0.15px;
-}
+} 
 
 p {
   margin: 0;
-}
+  display: flex;
+  justify-content: space-between; /*Spaces out child elements evenly with space between them*/
+} /* Flexbox only affects elements with multiple child nodes 
+        (elements or text + elements). If a <p> has only text, 
+        flexbox does nothing visually. If it has text and a <span>, 
+        flexbox spaces them apart. */
 
 .divider {
   border-bottom: 1px solid #888989;
@@ -37,3 +42,51 @@ p {
 .bold {
     font-weight: 800;
 }
+
+.large {
+  height: 10px;
+}
+
+.large, .medium {
+  background-color: black;
+  border: 0;
+}
+
+.small-text {
+  font-size: 0.85rem; /*1rem = 16px, so 0.85rem = 13.6px 
+  The rem unit stands for root em, and is relative to the font size of the html element.
+  html was set to have a font-size of 16px in this CSS*/
+}
+
+.calories-info h2 { /*Targets only h2 inside an element with class calories-info*/
+  margin: 0;
+}
+
+.calories-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /*Aligns items along the cross axis (vertical axis in this case)*/
+  /*This combination arranges child elements in a row, spreads them out with equal 
+  space between, and aligns them to the bottom edge of the container.*/
+}
+
+.left-container p {
+  margin: -5px -2px;
+  font-size: 2em; /*2em = 2 times the font size of the parent element.
+  The parent of .left-container is .calories-info.
+  .calories-info does not set a font-size, so it inherits from its parent, which is 
+  .label, and .label also does not set a font-size. Therefore, the font size for 
+  .left-container (and its parent chain) ultimately inherits from the html element*/
+  font-weight: 700;
+}
+
+.calories-info span {
+  font-size: 2.4em;
+  font-weight: 700;
+  margin: -7px -2px;
+}
+
+.medium {
+  height: 5px;
+}
+
