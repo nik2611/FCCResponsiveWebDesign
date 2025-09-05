@@ -36,7 +36,27 @@
       </div>
       <div class="divider medium"></div>
       <div class="daily-value small-text">
-        <p class="bold right">% Daily Value *</p>
+        <p class="bold right no-divider">% Daily Value *</p>
+        <div class="divider"></div>
+        <!-- <span class="bold">Total Fat</span>8g<span class="bold">10%</span> -->
+        <!-- Changed above line to below line which spaces two spans and text evenly-->
+        <p>
+          <span><span class="bold">Total Fat</span> 8g</span>
+          <span class="bold">10%</span>
+        </p>
+        <!-- The two <span> elements are direct children excluding the inner span 
+               and thus two flex items.
+               Flexbox spaces these two spans apart:
+               The first span (Total Fat 8g) is on the left.
+               The second span (10%) is on the right. -->
+
+        <!-- Flexbox only affects elements with multiple child nodes 
+          (elements or text + elements). If a <p> has only text, 
+          flexbox does nothing visually. If it has text and a <span>, 
+          flexbox spaces them apart. -->
+        <p class="indent no-divider">
+          Saturated Fat 1g <span class="bold">5%</span>
+        </p>
       </div>
     </div>
   </body>

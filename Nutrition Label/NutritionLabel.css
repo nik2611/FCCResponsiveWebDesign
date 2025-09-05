@@ -66,6 +66,9 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: flex-end; /*Aligns items along the cross axis (vertical axis in this case)*/
+  /*justify-content = main axis (row: left/right, column: top/bottom)
+   align-items = cross axis (row: top/bottom, column: left/right)*/
+  
   /*This combination arranges child elements in a row, spreads them out with equal 
   space between, and aligns them to the bottom edge of the container.*/
 }
@@ -90,3 +93,22 @@ p {
   height: 5px;
 }
 
+.right {
+  justify-content: flex-end; /*Aligns child elements to the end of the main axis 
+                              (right side in this case)*/
+  /*justify-content = main axis (row: left/right, column: top/bottom)
+   align-items = cross axis (row: top/bottom, column: left/right)*/
+}
+
+.indent {
+  margin-left: 1em
+}
+
+/*.daily-value p {
+  border-bottom: 1px solid #888989;
+}*/
+
+.daily-value p:not(.no-divider){ /* Selects all <p> elements inside .daily-value 
+                                    except those with class no-divider */
+  border-bottom: 1px solid #888989;
+}
